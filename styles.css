@@ -375,7 +375,7 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.65);padding:70px 0 0}
   .roadmap{grid-template-columns:1fr 1fr}
 }
 @media(max-width:820px){
-  section{padding:70px 0}
+  section{padding:60px 0}
   .about-wrap{grid-template-columns:1fr}
   .steps-wrap{grid-template-columns:1fr}
   .stage-track{grid-template-columns:1fr}
@@ -383,31 +383,72 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.65);padding:70px 0 0}
   .partner-grid{grid-template-columns:1fr}
   .curriculum-wrap{grid-template-columns:1fr}
   .contact-grid{grid-template-columns:1fr}
-  .cta-band{grid-template-columns:1fr;padding:36px 28px}
+  .cta-band{grid-template-columns:1fr;padding:36px 24px}
   .hero-stats{grid-template-columns:repeat(2,1fr)}
   .sector-grid{grid-template-columns:1fr 1fr}
   .speakers-grid{grid-template-columns:repeat(2,1fr)}
-  .roadmap{grid-template-columns:1fr}
+  .roadmap{grid-template-columns:1fr 1fr}
   .road-card{border-right:none;border-bottom:1px solid var(--line)}
   .tier-grid{grid-template-columns:1fr}
   .impact-3{grid-template-columns:1fr}
   form.cf .row{grid-template-columns:1fr}
   .obj-list{grid-template-columns:1fr}
+  .prog-aside{grid-template-columns:1fr 1fr;display:grid}
 }
 @media(max-width:640px){
-  h2{font-size:1.7rem}
-  .hero-content h1{font-size:2.2rem}
-  nav.menu{position:fixed;top:0;right:-100%;width:78%;max-width:320px;height:100vh;background:#fff;flex-direction:column;align-items:flex-start;padding:28px 24px;gap:4px;transition:.32s ease;box-shadow:-8px 0 32px rgba(0,0,0,.15);z-index:1100}
+  section{padding:50px 0}
+  h2{font-size:1.65rem}
+  .hero-content h1{font-size:2rem}
+  .hero-inner{padding:120px 0 60px}
+
+  /* Nav — slide-in panel */
+  nav.menu{position:fixed;top:0;right:-100%;width:82%;max-width:300px;height:100vh;background:#fff;flex-direction:column;align-items:flex-start;padding:24px 20px;gap:4px;transition:.32s ease;box-shadow:-8px 0 32px rgba(0,0,0,.18);z-index:1100}
   nav.menu.open{right:0}
-  nav.menu a{color:var(--ink);padding:11px 12px;width:100%;border-radius:10px;font-size:.95rem}
+  nav.menu a{color:var(--ink);padding:12px 14px;width:100%;border-radius:10px;font-size:1rem}
   nav.menu a:hover{background:var(--bg)}
-  .menu-close-btn{display:flex}
+  .menu-close-btn{display:flex;margin-bottom:12px}
   .nav-cta{display:none}
   .burger{display:block}
-  .event-band .inner{gap:16px;flex-direction:column;align-items:flex-start}
-  .event-band .sep{display:none}
+
+  /* Logo — shrink on mobile */
+  .brand img{height:80px;width:80px}
+
+  /* Countdown — tighter on mobile */
+  .cd-grid{gap:4px}
+  .cd-unit{min-width:72px}
+  .cd-num{font-size:2.4rem}
+  .cd-sep{font-size:2rem;margin-bottom:16px}
+  .cd-sub{font-size:.72rem;padding:0 12px}
+
+  /* Logo wall — stack vertically */
+  .logo-wall .lw-header{flex-direction:column;gap:20px;align-items:flex-start;padding:20px 20px 0}
+  .logo-wall .lw-divider{display:none}
+  .logo-wall .lw-group{gap:14px}
+  .logo-wall .lw-group img{height:40px}
+
+  /* Sectors / tiers */
   .sector-grid{grid-template-columns:1fr}
+  .tier-grid{grid-template-columns:1fr}
+  .speakers-grid{grid-template-columns:1fr 1fr}
+  .roadmap{grid-template-columns:1fr}
+  .road-card{border-right:none;border-bottom:1px solid var(--line)}
+
+  /* Programme aside stack */
+  .prog-aside{display:grid;grid-template-columns:1fr}
+
+  /* Partners p-card layout */
+  .p-card{grid-template-columns:1fr}
+  .p-av{display:none}
+
+  /* CTA form */
+  .cta-form{padding:20px}
+
+  /* Misc */
   .m-tags{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr}
   .footer-bottom{flex-direction:column;text-align:center}
+  .value-chain{gap:4px}
+  .vc-step{font-size:.68rem;padding:5px 9px}
+  .obj-list{grid-template-columns:1fr}
+  .hero-stats{grid-template-columns:repeat(2,1fr)}
 }
