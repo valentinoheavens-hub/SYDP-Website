@@ -27,6 +27,17 @@
   setInterval(tick, 1000);
 })();
 
+// ===== Hero logo spin toggle =====
+(function(){
+  const ring = document.getElementById('heroLogoRing');
+  if(!ring) return;
+  let paused = false;
+  ring.addEventListener('click', () => {
+    paused = !paused;
+    ring.classList.toggle('paused', paused);
+  });
+})();
+
 // ===== Header scroll =====
 const hdr = document.getElementById('hdr');
 window.addEventListener('scroll', () => {
