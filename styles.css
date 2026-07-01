@@ -112,7 +112,7 @@ nav.menu a:hover{color:#fff;background:rgba(255,255,255,.1)}
 /* Lead partner cards */
 .lw-lead-card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:32px 40px;text-align:center;flex:1;min-width:240px}
 .lw-lead-card img{height:130px;width:auto;object-fit:contain;transition:.2s}
-.lw-lead-card--bb img{height:160px}
+.lw-lead-card--bb img{height:200px}
 .lw-lead-card img:hover{transform:scale(1.04)}
 .lw-role{font-size:.65rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);background:var(--gold-dim);padding:4px 12px;border-radius:999px;white-space:nowrap}
 .lw-name{font-size:.78rem;font-weight:700;color:var(--navy);line-height:1.3}
