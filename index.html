@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>SYDP — Strategic Youth Development Programme | UNILAG 2026</title>
+<meta name="description" content="Transforming Innovative Talents into Strategic Skills, Sustainable Enterprises and Future Leaders. Maiden Edition — University of Lagos, July 2026."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="icon" type="image/png" href="assets/img/sydp-logo.png"/>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="hdr">
+  <div class="container nav-wrap">
+    <a href="#" class="brand">
+      <img src="assets/img/sydp-logo.png" alt="SYDP"/>
+    </a>
+    <nav class="menu" id="nav">
+      <button class="menu-close-btn" onclick="toggleNav()">✕</button>
+      <a href="#about">About</a>
+      <a href="#pathways">Pathways</a>
+      <a href="#programme">Programme</a>
+      <a href="#curriculum">Curriculum</a>
+      <a href="#partners">Partners</a>
+      <a href="#sponsor">Sponsor</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#sponsor" class="btn btn-primary">Partner With Us</a>
+    </div>
+    <button class="burger" onclick="toggleNav()" aria-label="menu">&#9776;</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-inner container">
+    <div class="hero-content">
+      <span class="eyebrow">Maiden Edition &nbsp;·&nbsp; University of Lagos &nbsp;·&nbsp; July 2026</span>
+      <h1>Transforming <em>Talent</em> Into<br>Enterprise &amp; <em>Leadership.</em></h1>
+      <p>The Strategic Youth Development Programme (SYDP) is Africa's most ambitious university-anchored incubation ecosystem — turning student potential into investment-ready enterprises, one cohort at a time.</p>
+      <div class="hero-cta">
+        <a href="#sponsor" class="btn btn-primary">Partner With Us &rarr;</a>
+      </div>
+      <div class="hero-stats">
+        <div class="h-stat"><div class="num">600</div><div class="lbl">Student Entrepreneurs</div></div>
+        <div class="h-stat"><div class="num">11</div><div class="lbl">Expert Modules</div></div>
+        <div class="h-stat"><div class="num">20</div><div class="lbl">Enterprise Pathways</div></div>
+        <div class="h-stat"><div class="num">12</div><div class="lbl">Departments</div></div>
+      </div>
+    </div>
+  </div>
+  <a href=".logo-wall" class="hero-scroll" onclick="event.preventDefault();document.querySelector('.logo-wall').scrollIntoView({behavior:'smooth'})">
+    <span>Scroll</span>
+    <div class="scroll-bar"></div>
+  </a>
+</section>
+
+<!-- COUNTDOWN -->
+<div class="countdown-band">
+  <div class="container">
+    <div class="cd-label">Opening Ceremony Begins In</div>
+    <div class="cd-grid">
+      <div class="cd-unit"><span class="cd-num" id="cd-days">--</span><span class="cd-lbl">Days</span></div>
+      <div class="cd-sep">:</div>
+      <div class="cd-unit"><span class="cd-num" id="cd-hours">--</span><span class="cd-lbl">Hours</span></div>
+      <div class="cd-sep">:</div>
+      <div class="cd-unit"><span class="cd-num" id="cd-mins">--</span><span class="cd-lbl">Minutes</span></div>
+      <div class="cd-sep">:</div>
+      <div class="cd-unit"><span class="cd-num" id="cd-secs">--</span><span class="cd-lbl">Seconds</span></div>
+    </div>
+    <div class="cd-sub">Thursday, 2 July 2026 · 2:00 PM · Faculty of Law Inner Hall, UNILAG</div>
+  </div>
+</div>
+
+<!-- LOGO WALL -->
+<div class="logo-wall">
+  <div class="container">
+    <div class="lw-header">
+      <div class="lw-group">
+        <span class="lw-label">Co-Created By</span>
+        <img src="assets/img/amc-ltd-logo.png" alt="Auxilium Max Company"/>
+        <img src="assets/img/blackbelt-logo.png" alt="BlackBelt Global Consulting"/>
+      </div>
+      <div class="lw-divider"></div>
+      <div class="lw-group">
+        <span class="lw-label">Institutional Partners</span>
+        <img src="assets/img/unilag-logo.png" alt="University of Lagos"/>
+        <img src="assets/img/palms-africa-logo.png" alt="PALMS Africa"/>
+        <img src="assets/img/bbceo-new-logo.png" alt="BlackBeltCEO Business Clinic"/>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scrolling network marquee -->
+  <div class="logo-marquee">
+    <div class="marquee-track">
+      <img src="assets/img/taskmaster-logo.png" alt="Taskmaster Africa"/>
+      <div class="marquee-sep"></div>
+      <img src="assets/img/mysweetstories-logo.png" alt="MySweetStories"/>
+      <div class="marquee-sep"></div>
+      <img src="assets/img/divas-world-logo.png" alt="Divas World Academy"/>
+      <div class="marquee-sep"></div>
+      <img src="assets/img/sab-studios-logo.png" alt="SAB Studios NG"/>
+      <div class="marquee-sep"></div>
+      <img src="assets/img/project-blue-world-logo.png" alt="Project Blue World"/>
+      <div class="marquee-sep"></div>
+      <img src="assets/img/enhancing-hp-logo.png" alt="Enhancing Human Potential"/>
+      <div class="marquee-sep"></div>
+      <img src="assets/img/abi-logo.png" alt="ABI"/>
+      <div class="marquee-sep"></div>
+      <img src="assets/img/saiea-logo.png" alt="SAIEA"/>
+      <div class="marquee-sep"></div>
+      <img src="assets/img/lcpa-logo.png" alt="LCPA Federation"/>
+      <div class="marquee-sep"></div>
+      <!-- Duplicate for seamless loop -->
+      <img src="assets/img/taskmaster-logo.png" alt="Taskmaster Africa"/>
+      <div class="marquee-sep"></div>
+      <img src="assets/img/mysweetstories-logo.png" alt="MySweetStories"/>
+      <div class="marquee-sep"></div>
+      <img src="assets/img/divas-world-logo.png" alt="Divas World Academy"/>
+      <div class="marquee-sep"></div>
+      <img src="assets/img/sab-studios-logo.png" alt="SAB Studios NG"/>
+      <div class="marquee-sep"></div>
+      <img src="assets/img/project-blue-world-logo.png" alt="Project Blue World"/>
+      <div class="marquee-sep"></div>
+      <img src="assets/img/enhancing-hp-logo.png" alt="Enhancing Human Potential"/>
+      <div class="marquee-sep"></div>
+      <img src="assets/img/abi-logo.png" alt="ABI"/>
+      <div class="marquee-sep"></div>
+      <img src="assets/img/saiea-logo.png" alt="SAIEA"/>
+      <div class="marquee-sep"></div>
+      <img src="assets/img/lcpa-logo.png" alt="LCPA Federation"/>
+      <div class="marquee-sep"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" style="background:#fff">
+  <div class="container">
+    <div class="about-wrap">
+
+      <div class="reveal">
+        <span class="eyebrow">About SYDP</span>
+        <h2>A Long-Term Pathway,<br>Not a One-Off Training</h2>
+        <p class="lead">SYDP is a structured youth empowerment and enterprise development initiative designed to identify, nurture, mentor, and support talented young people in transforming their natural abilities into productive economic assets.</p>
+
+        <div class="value-chain" style="margin-top:24px">
+          <span class="vc-step">Talent</span><span class="vc-arr">›</span>
+          <span class="vc-step">Skill</span><span class="vc-arr">›</span>
+          <span class="vc-step">Product</span><span class="vc-arr">›</span>
+          <span class="vc-step">Enterprise</span><span class="vc-arr">›</span>
+          <span class="vc-step">Wealth</span><span class="vc-arr">›</span>
+          <span class="vc-step last">Impact</span>
+        </div>
+
+        <h4 style="margin:28px 0 12px;color:var(--navy)">Programme Objectives</h4>
+        <div class="obj-list">
+          <div class="obj-item"><span class="chk">✓</span>Identify talented &amp; innovative students</div>
+          <div class="obj-item"><span class="chk">✓</span>Profile talents, skills &amp; economic potential</div>
+          <div class="obj-item"><span class="chk">✓</span>Develop entrepreneurial competencies</div>
+          <div class="obj-item"><span class="chk">✓</span>Create enterprise pathways</div>
+          <div class="obj-item"><span class="chk">✓</span>Promote sector-based collaboration</div>
+          <div class="obj-item"><span class="chk">✓</span>Provide long-term mentorship</div>
+          <div class="obj-item"><span class="chk">✓</span>Connect participants with investors</div>
+          <div class="obj-item"><span class="chk">✓</span>Build a sustainable ecosystem</div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="vm-cards">
+          <div class="vm-card light">
+            <h4>Vision</h4>
+            <p>To build Africa's leading university-based youth development ecosystem that transforms talents into enterprises, leaders, innovators, and job creators.</p>
+          </div>
+          <div class="vm-card light">
+            <h4>Mission</h4>
+            <p>To identify, profile, develop, mentor, and support young people in converting their talents and innovative ideas into sustainable enterprises and impactful careers.</p>
+          </div>
+          <div class="vm-card navy">
+            <h4>The Maiden Edition</h4>
+            <p>UNILAG Cohort 1 (July 2026) is co-created by <strong style="color:#fff">Auxilium Max Company Limited (AMC)</strong>, Lead Implementor, and <strong style="color:#fff">BlackBelt Global Consulting Limited</strong>, Strategic Partner &amp; Co-Delivery Lead — the proof-of-concept for Pan-African expansion.</p>
+          </div>
+          <div class="vm-card green">
+            <h4>Global Alignment</h4>
+            <div class="sdg-chips">
+              <span class="sdg-chip">UN SDG 4</span>
+              <span class="sdg-chip">UN SDG 8</span>
+              <span class="sdg-chip">UN SDG 9</span>
+              <span class="sdg-chip">UN SDG 10</span>
+              <span class="sdg-chip">UN SDG 17</span>
+              <span class="sdg-chip">AU Agenda 2063</span>
+              <span class="sdg-chip">Young Africa Works</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SELECTION PROCESS -->
+<section style="background:var(--bg)">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">How to Join</span>
+      <h2>Student Selection Process</h2>
+      <p>A rigorous, faculty-led process ensures we identify truly motivated, high-potential participants from across the University of Lagos.</p>
+    </div>
+    <div class="steps-wrap reveal">
+      <div class="step-block navy">
+        <div class="sn">01</div>
+        <h4>Nomination</h4>
+        <p>Twelve departments nominate through Department Presidents, Class Representatives &amp; Faculty Leadership. Approximately 1,000 students identified.</p>
+      </div>
+      <div class="step-block green">
+        <div class="sn">02</div>
+        <h4>Screening</h4>
+        <p>Students screened on CV, character, leadership potential, academic standing, and peer recommendations. 600 students selected.</p>
+      </div>
+      <div class="step-block dark">
+        <div class="sn">03</div>
+        <h4>Registration</h4>
+        <p>Selected students complete a digital profile capturing talents, skills, enterprise interests, leadership experience &amp; mentorship preferences.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ENTERPRISE PATHWAYS -->
+<section id="pathways" style="background:#fff">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Enterprise Pathways</span>
+      <h2>20 Pathways Across<br>5 Strategic Sectors</h2>
+      <p>Students select from interconnected business ecosystems designed to strengthen collaboration, value chains, and long-term mentorship within Nigeria's most dynamic sectors.</p>
+    </div>
+    <div class="sector-grid reveal">
+      <div class="sector-card" style="--accent:#e6961a">
+        <span class="g-tag" style="background:#e6961a">Group 1</span>
+        <h4>🌾 Food &amp; Agriculture</h4>
+        <ul>
+          <li>Agriculture</li><li>Food Processing</li>
+          <li>Distribution</li><li>Cooking &amp; Baking</li>
+        </ul>
+      </div>
+      <div class="sector-card" style="--accent:#c026d3">
+        <span class="g-tag" style="background:#c026d3">Group 2</span>
+        <h4>👗 Fashion &amp; Beauty</h4>
+        <ul>
+          <li>Clothing &amp; Fashion Design</li><li>Accessories</li>
+          <li>Skincare</li><li>Haircare</li>
+        </ul>
+      </div>
+      <div class="sector-card" style="--accent:#0891b2">
+        <span class="g-tag" style="background:#0891b2">Group 3</span>
+        <h4>💡 Technology</h4>
+        <ul>
+          <li>Green Energy</li><li>Healthcare Innovation</li>
+          <li>Security Technology</li><li>Transportation Tech</li>
+        </ul>
+      </div>
+      <div class="sector-card" style="--accent:#dc2626">
+        <span class="g-tag" style="background:#dc2626">Group 4</span>
+        <h4>🎭 Entertainment</h4>
+        <ul>
+          <li>Tourism &amp; Hospitality</li><li>Acting &amp; Film</li>
+          <li>Music &amp; Dance</li><li>Fine Arts &amp; Crafts</li>
+        </ul>
+      </div>
+      <div class="sector-card" style="--accent:var(--green)">
+        <span class="g-tag">Group 5</span>
+        <h4>🏗️ Real Estate</h4>
+        <ul>
+          <li>Interior Design</li><li>Landscape Design</li>
+          <li>Marketing &amp; Animation</li><li>Construction</li>
+        </ul>
+      </div>
+    </div>
+    <p class="reveal" style="margin-top:18px;color:var(--muted);font-size:.85rem;text-align:center">Participants outside these pathways may select <strong>OTHER</strong> — Petroleum, Maritime, Aviation, Mining, Manufacturing or Emerging Industries.</p>
+  </div>
+</section>
+
+<!-- OPENING CEREMONY -->
+<section style="background:var(--bg)">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Cohort 1 Launch</span>
+      <h2>Opening Ceremony Programme</h2>
+      <p>Thursday, 2 July 2026 · Faculty of Law Inner Hall, UNILAG · Physical attendance is compulsory for all participants.</p>
+    </div>
+    <div class="ceremony-grid reveal">
+      <div class="prog-table">
+        <div class="prog-row"><div class="prog-time">2:00 pm</div><div class="prog-desc">Photoshoot &amp; registration for every student project management team</div></div>
+        <div class="prog-row"><div class="prog-time">3:00 pm</div><div class="prog-desc">Opening prayer</div></div>
+        <div class="prog-row"><div class="prog-time">3:05 pm</div><div class="prog-desc">Introduction of facilitators, special guests &amp; sponsors<span class="spk">By the MC — Bukola Olorunfemi</span></div></div>
+        <div class="prog-row"><div class="prog-time">3:10 pm</div><div class="prog-desc"><strong>The strategic vision behind 2026 SYDP</strong><span class="spk">Ms. Perpetual-Love Uduma — Founder &amp; CEO, Auxilium Max Company Limited</span></div></div>
+        <div class="prog-row"><div class="prog-time">3:30 pm</div><div class="prog-desc"><strong>Importance of business mentoring for professional networking</strong><span class="spk">Dr. Valentino Heavens — MD/CEO, BlackBelt Global Consulting Limited</span></div></div>
+        <div class="prog-row"><div class="prog-time">3:50 pm</div><div class="prog-desc"><strong>Timetable &amp; scoring format for 2026 SYDP</strong><span class="spk">Dr. David Adio-Moses — Senior Lecturer, University of Lagos</span></div></div>
+        <div class="prog-row"><div class="prog-time">4:10 pm</div><div class="prog-desc"><strong>Leadership excellence for sustainable entrepreneurship</strong><span class="spk">Dr. Nath Aghraghra — Director General, PALMS Africa</span></div></div>
+        <div class="prog-row"><div class="prog-time">4:30 pm</div><div class="prog-desc">Certificates of appreciation to twelve Faculty Deans + photoshoot</div></div>
+        <div class="prog-row"><div class="prog-time">4:50 pm</div><div class="prog-desc">Video on strategic innovation for business excellence</div></div>
+        <div class="prog-row"><div class="prog-time">5:00 pm</div><div class="prog-desc">Sponsors' presentation</div></div>
+        <div class="prog-row"><div class="prog-time">5:10 pm</div><div class="prog-desc"><strong>Artificial intelligence for management excellence</strong><span class="spk">Mr. Shina Oliyide — CEO, Gnovia Limited</span></div></div>
+        <div class="prog-row"><div class="prog-time">5:30 pm</div><div class="prog-desc">Interactive session — Project Management groups of ten</div></div>
+        <div class="prog-row"><div class="prog-time">5:40 pm</div><div class="prog-desc">Refreshment</div></div>
+        <div class="prog-row"><div class="prog-time">5:50 pm</div><div class="prog-desc">Closing remarks &amp; vote of thanks</div></div>
+        <div class="prog-row"><div class="prog-time">6:00 pm</div><div class="prog-desc">Closing prayer</div></div>
+      </div>
+      <div class="prog-aside">
+        <div class="mc-card">
+          <div class="mc-label">Master of Ceremony</div>
+          <h4>Bukola Olorunfemi</h4>
+        </div>
+        <div class="assess-card">
+          <h4>Assessment Format</h4>
+          <div class="a-item">
+            <strong>A. Ten Individual Online Assignments</strong>
+            <span>100% of module score — 11 facilitated sessions</span>
+          </div>
+          <div class="a-item">
+            <strong>B. Entrepreneurship Team Pitch</strong>
+            <span>Teams of up to 10 — Internal Pitch 28 Jul, External Pitch 30 Jul</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMME STRUCTURE -->
+<section id="programme" style="background:#fff">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Programme Structure</span>
+      <h2>Three Stages. One Year.<br>A Lifetime of Impact.</h2>
+      <p>Every participant has a pathway. No one is left behind — from full incubation for the top teams to an alternative track for everyone else.</p>
+    </div>
+    <div class="stage-track reveal">
+      <div class="stage-card s1">
+        <span class="s-label">Stage 1 — Months 1–2</span>
+        <h3>Business Excellence Orientation &amp; Pitching</h3>
+        <p>All 600 participants undergo structured training across 11 modules covering mindset, leadership, financial literacy, marketing, project management &amp; pitch development.</p>
+        <ul>
+          <li>11 modules, 10 marks each (100 total)</li>
+          <li>Business project submitted as assignment</li>
+          <li>Top 50 teams present at Internal Pitch Day</li>
+          <li>Top 10 selected for full incubation + prizes</li>
+          <li>Next 40 teams: CAC registration + support</li>
+        </ul>
+        <div class="stage-chips">
+          <span class="stage-chip">📅 2 – 28 Jul 2026</span>
+          <span class="stage-chip">Online + UNILAG</span>
+        </div>
+      </div>
+      <div class="stage-card s2">
+        <span class="s-label">Stage 2 — Months 2–4</span>
+        <h3>Incubation &amp; Investment Readiness</h3>
+        <p>The <strong style="color:var(--gold-light)">Top 10 winning teams</strong> enter a structured incubation and acceleration track, co-delivered by AMC and BlackBelt Global Consulting Limited.</p>
+        <ul>
+          <li>Scholarships for advanced business training</li>
+          <li>Facilities Management operational excellence</li>
+          <li>Direct enterprise set-up or expansion funding</li>
+          <li>BOI-checklist coaching &amp; bankable plans</li>
+          <li>Investment Matchmaking Demo Day</li>
+        </ul>
+        <div class="stage-chips">
+          <span class="stage-chip">🏆 Top 10 Teams</span>
+          <span class="stage-chip">Full Incubation</span>
+        </div>
+      </div>
+      <div class="stage-card s3">
+        <span class="s-label">Stage 3 — Months 5–12</span>
+        <h3>Alternative Incubation Track</h3>
+        <p>Remaining participants enrol in a PALMS Africa-led development track — preparing them to return to the next SYDP cohort as stronger, better-prepared teams.</p>
+        <ul>
+          <li>Strategic leadership excellence training</li>
+          <li>Innovative entrepreneurship coaching</li>
+          <li>Quality Control mentoring sessions</li>
+          <li>Preparation for SYDP Cohort 2</li>
+          <li>Access to BlackBeltCEO Business Clinic</li>
+        </ul>
+        <div class="stage-chips">
+          <span class="stage-chip">🌱 No One Left Behind</span>
+          <span class="stage-chip">PALMS Africa Track</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:64px">
+      <div class="section-head reveal">
+        <span class="eyebrow">Delivery Model</span>
+        <h2>Hybrid University Ecosystem</h2>
+      </div>
+      <div class="delivery-grid reveal">
+        <div class="del-card">
+          <div class="ico">🏛️</div>
+          <h4>Physical Hub</h4>
+          <p>Faculty of Law Inner Hall, UNILAG — Opening Ceremony, Tuesday/Thursday sessions (first 100 students), Internal &amp; External Pitch Days, Demo Day, and monthly QC mentoring.</p>
+        </div>
+        <div class="del-card">
+          <div class="ico">💻</div>
+          <h4>Online Platform</h4>
+          <p>Weekly Zoom/Google Meet classes for all 600 participants. Module assignments, facilitator resources &amp; Google Form registration. Tue, Thu &amp; Sat: 5–6 pm.</p>
+        </div>
+        <div class="del-card">
+          <div class="ico">🤝</div>
+          <h4>Industry Integration</h4>
+          <p>Industry-led facilitation by active professionals. Investor guest sessions, BOI compliance coaching, FM quality control mentoring, and the BlackBelt Global IRBC clinic.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CURRICULUM -->
+<section id="curriculum" style="background:var(--bg)">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Curriculum</span>
+      <h2>11-Module Business<br>Excellence Framework</h2>
+      <p>Each module is facilitated by an expert practitioner and carries marks toward the 100-mark assessed total.</p>
+    </div>
+    <div class="curriculum-wrap">
+      <div class="tl-list reveal">
+        <div class="tl-item">
+          <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-content"><div class="tl-mod">Module 1 — 5 marks</div><h4>Mindset Transformation &amp; Personal Effectiveness</h4><div class="tl-meta"><span>📅 Sat 4 Jul, 5:00–5:30pm</span><span>👤 Ms. Perpetual-Love Uduma</span></div></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-content"><div class="tl-mod">Module 2 — 5 marks</div><h4>Smart Digital Technology for Business Excellence</h4><div class="tl-meta"><span>📅 Sat 4 Jul, 5:30–6:00pm</span><span>👤 Dr. Valentino Heavens</span></div></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-content"><div class="tl-mod">Module 3 — 10 marks</div><h4>Leadership Excellence for Entrepreneurs &amp; Managers</h4><div class="tl-meta"><span>📅 Tue 7 Jul, 5–6pm</span><span>👤 Dr. Nath Aghraghra</span></div></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-content"><div class="tl-mod">Module 4 — 10 marks</div><h4>Facilities Management Fundamentals</h4><div class="tl-meta"><span>📅 Thu 9 Jul, 5–6pm</span><span>👤 Mr. Paul Erubami</span></div></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-content"><div class="tl-mod">Module 5 — 10 marks</div><h4>Enterprise Discovery &amp; Opportunity Identification</h4><div class="tl-meta"><span>📅 Sat 11 Jul, 5–6pm</span><span>👤 Ms. Perpetual-Love Uduma</span></div></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-content"><div class="tl-mod">Module 6 — 10 marks</div><h4>Business Plan &amp; Business Model Development</h4><div class="tl-meta"><span>📅 Tue 14 Jul, 5–6pm</span><span>👤 Dr. Valentino Heavens</span></div></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-content"><div class="tl-mod">Module 7 — 10 marks</div><h4>Project Management Fundamentals</h4><div class="tl-meta"><span>📅 Thu 16 Jul, 5–6pm</span><span>👤 Dr. David Adio-Moses</span></div></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-content"><div class="tl-mod">Module 8 — 10 marks</div><h4>Financial Literacy &amp; Wealth Creation</h4><div class="tl-meta"><span>📅 Sat 18 Jul, 5–6pm</span><span>👤 Dr. Valentino Heavens</span></div></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-content"><div class="tl-mod">Module 9 — 10 marks</div><h4>Marketing, Branding &amp; Customer Acquisition</h4><div class="tl-meta"><span>📅 Tue 21 Jul, 5–6pm</span><span>👤 Dr. Valentino Heavens</span></div></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-content"><div class="tl-mod">Module 10 — 10 marks</div><h4>Business Packaging &amp; Professional Presentation</h4><div class="tl-meta"><span>📅 Thu 23 Jul, 5–6pm</span><span>👤 Ms. Perpetual-Love Uduma</span></div></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-left"><div class="tl-dot"></div></div>
+          <div class="tl-content"><div class="tl-mod">Module 11 — 10 marks</div><h4>Pitch Development &amp; Investor Readiness</h4><div class="tl-meta"><span>📅 Sat 25 Jul, 5–6pm</span><span>👤 Dr. Valentino Heavens</span></div></div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="dates-card">
+          <h5>Key Dates — July 2026</h5>
+          <div class="d-item">
+            <div class="d-tag">Opening Ceremony</div>
+            <div class="d-title">Thu 2 Jul · 2–6pm</div>
+            <div class="d-note">Faculty of Law · Physical Compulsory</div>
+          </div>
+          <div class="d-item">
+            <div class="d-tag">Modules 1–11</div>
+            <div class="d-title">4 Jul – 25 Jul</div>
+            <div class="d-note">Tue, Thu, Sat — 5–6pm online</div>
+          </div>
+          <div class="d-item">
+            <div class="d-tag">Internal Pitch — Top 50</div>
+            <div class="d-title">Tue 28 Jul · 4–6pm</div>
+            <div class="d-note">Physical Attendance Compulsory</div>
+          </div>
+          <div class="d-item">
+            <div class="d-tag">External Pitch — Top 20</div>
+            <div class="d-title">Thu 30 Jul · 4–6pm</div>
+            <div class="d-note">14 judges · Physical Compulsory</div>
+          </div>
+        </div>
+        <div class="mentorship-card">
+          <h4>Post-Programme Mentorship</h4>
+          <p>Voluntary long-term mentorship continues months and years after graduation — a distinctive SYDP feature.</p>
+          <div class="m-tags">
+            <div class="m-tag">📋 Project Management</div>
+            <div class="m-tag">🏢 Facilities Management</div>
+            <div class="m-tag">🚀 Entrepreneurship</div>
+            <div class="m-tag">🎯 Leadership Excellence</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FACILITATORS -->
+<section style="background:#fff">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Facilitators</span>
+      <h2>Practitioners, Not Just Lecturers</h2>
+      <p>Every module is led by an active business professional, executive, or academic — real experience in the room.</p>
+    </div>
+    <div class="speakers-grid reveal">
+      <div class="spk-card">
+        <div class="spk-av">PU</div>
+        <h4>Perpetual-Love Uduma</h4>
+        <div class="spk-role">Founder &amp; CEO, AMC</div>
+        <p>Principal Consultant, NBDSPL · Lead Implementor</p>
+      </div>
+      <div class="spk-card">
+        <div class="spk-av" style="background:var(--green)">VH</div>
+        <h4>Dr. Valentino Heavens</h4>
+        <div class="spk-role">MD/CEO, BlackBelt Global</div>
+        <p>PhD (hc), FIMC, CMC®, CMS, NBDSPL</p>
+      </div>
+      <div class="spk-card">
+        <div class="spk-av" style="background:#0891b2">NA</div>
+        <h4>Dr. Nath Aghraghra</h4>
+        <div class="spk-role">Director General</div>
+        <p>PALMS Africa Network</p>
+      </div>
+      <div class="spk-card">
+        <div class="spk-av" style="background:#7c3aed">DA</div>
+        <h4>Dr. David Adio-Moses</h4>
+        <div class="spk-role">Senior Lecturer</div>
+        <p>University of Lagos — UNILAG Liaison</p>
+      </div>
+      <div class="spk-card">
+        <div class="spk-av" style="background:#b45309">PE</div>
+        <h4>Paul Erubami</h4>
+        <div class="spk-role">Chief Executive Officer</div>
+        <p>Max-Migold Limited</p>
+      </div>
+      <div class="spk-card">
+        <div class="spk-av" style="background:#be185d">SO</div>
+        <h4>Shina Oliyide</h4>
+        <div class="spk-role">Chief Executive Officer</div>
+        <p>Gnovia Limited — AI for Management</p>
+      </div>
+      <div class="spk-card">
+        <div class="spk-av" style="background:#64748b">BO</div>
+        <h4>Bukola Olorunfemi</h4>
+        <div class="spk-role">Master of Ceremony</div>
+        <p>Opening Ceremony Host</p>
+      </div>
+      <div class="spk-card">
+        <div class="spk-av" style="background:#475569">+</div>
+        <h4>Guest Facilitators</h4>
+        <div class="spk-role">Industry Experts</div>
+        <p>Investor &amp; sponsor guest sessions</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section id="partners" style="background:var(--bg)">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Our Partners</span>
+      <h2>A Multi-Institutional<br>Delivery Consortium</h2>
+      <p>Specialist organisations each bringing deep domain expertise, co-delivering the programme with governance depth and sectoral breadth.</p>
+    </div>
+    <div class="partner-grid reveal">
+      <div class="p-card featured">
+        <div class="p-av" style="background:var(--navy)">AMC</div>
+        <div>
+          <div class="p-role">Lead Implementor</div>
+          <h4>Auxilium Max Company Limited (AMC)</h4>
+          <div class="p-person">Ms. Perpetual-Love Uduma · Founder &amp; CEO<br><span>Principal Consultant, NBDSPL</span></div>
+          <p>Business Venture Studio &amp; Pan-African Business Incubator. RC1908390 — Programme Design, Curriculum, Governance &amp; Pan-African Expansion.</p>
+          <div class="p-tags"><span class="p-tag">Enterprise Development</span><span class="p-tag">Venture Building</span><span class="p-tag">Programme Design</span></div>
+        </div>
+      </div>
+      <div class="p-card featured">
+        <div class="p-av" style="background:var(--green)">BB</div>
+        <div>
+          <div class="p-role">Strategic Partner &amp; Co-Delivery Lead</div>
+          <h4>BlackBelt Global Consulting Limited</h4>
+          <div class="p-person">Dr. Valentino Heavens · MD/CEO<br><span>PhD (hc), FIMC, CMC®, CMS, NBDSPL</span></div>
+          <p>International Business Strategy &amp; Investment Readiness Business Clinic (IRBC) co-delivery, plus Investment Matchmaking Demo Day facilitation.</p>
+          <div class="p-tags"><span class="p-tag">Leadership Development</span><span class="p-tag">Strategic Management</span><span class="p-tag">IRBC Co-Delivery</span></div>
+        </div>
+      </div>
+      <div class="p-card">
+        <div class="p-av" style="background:#0891b2">PA</div>
+        <div>
+          <div class="p-role">Alternative Incubation Track Lead</div>
+          <h4>PALMS Africa Network</h4>
+          <div class="p-person">Dr. Nath Aghraghra · Director General</div>
+          <p>Strategic leadership excellence training for innovative entrepreneurs and managers. Leads Stage 3 incubation track (Months 5–12).</p>
+          <div class="p-tags"><span class="p-tag">Leadership Excellence</span><span class="p-tag">Quality Control</span><span class="p-tag">Stage 3 Lead</span></div>
+        </div>
+      </div>
+      <div class="p-card">
+        <div class="p-av" style="background:#7c3aed">MM</div>
+        <div>
+          <div class="p-role">Industry &amp; Workforce Partner</div>
+          <h4>Max-Migold Limited</h4>
+          <div class="p-person">Mr. Paul Erubami · Chief Executive Officer</div>
+          <p>Facilities Management, Workforce Development &amp; Industry Engagement. Training centre, HRDC Building, UNILAG.</p>
+          <div class="p-tags"><span class="p-tag">Facilities Management</span><span class="p-tag">Workforce Development</span></div>
+        </div>
+      </div>
+      <div class="p-card">
+        <div class="p-av" style="background:var(--navy-deep);font-size:.65rem">UNI<br>LAG</div>
+        <div>
+          <div class="p-role">Host Institution</div>
+          <h4>University of Lagos (UNILAG)</h4>
+          <div class="p-person">Dr. David Adio-Moses · UNILAG Liaison &amp; Senior Lecturer</div>
+          <p>Institutional coordination, student mobilisation across 12 departments &amp; Faculty of Law venue support.</p>
+          <div class="p-tags"><span class="p-tag">12 Dept Nominations</span><span class="p-tag">Venue Support</span></div>
+        </div>
+      </div>
+      <div class="p-card">
+        <div class="p-av" style="background:#b45309">GNV</div>
+        <div>
+          <div class="p-role">Technology &amp; AI Partner</div>
+          <h4>Gnovia Limited</h4>
+          <div class="p-person">Mr. Shina Oliyide · Chief Executive Officer</div>
+          <p>Artificial Intelligence for management excellence — equipping participants with practical AI tools for business operations.</p>
+          <div class="p-tags"><span class="p-tag">AI for Business</span><span class="p-tag">Management Tech</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="network-strip reveal">
+      <img src="assets/img/bbceo-new-logo.png" alt="BlackBeltCEO Business Clinic" style="height:40px"/>
+      <img src="assets/img/taskmaster-logo.png" alt="Taskmaster Africa" style="height:40px"/>
+      <img src="assets/img/mysweetstories-logo.png" alt="MySweetStories" style="height:40px"/>
+      <img src="assets/img/divas-world-logo.png" alt="Divas World Academy" style="height:40px"/>
+      <img src="assets/img/sab-studios-logo.png" alt="SAB Studios NG" style="height:40px"/>
+      <img src="assets/img/project-blue-world-logo.png" alt="Project Blue World" style="height:40px"/>
+      <img src="assets/img/enhancing-hp-logo.png" alt="Enhancing Human Potential" style="height:40px"/>
+      <img src="assets/img/abi-logo.png" alt="ABI" style="height:40px"/>
+      <img src="assets/img/saiea-logo.png" alt="SAIEA" style="height:40px"/>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section class="impact-section">
+  <div class="container">
+    <div class="section-head center reveal" style="max-width:700px;margin-left:auto;margin-right:auto">
+      <span class="eyebrow" style="background:rgba(201,162,39,.2);color:var(--gold-light)">Impact</span>
+      <h2 style="color:#fff">What Your Investment Creates</h2>
+      <p style="color:rgba(255,255,255,.6)">SYDP delivers economic, social, and systemic impact — measurable, reported, and aligned to global development mandates.</p>
+    </div>
+    <div class="impact-3 reveal">
+      <div class="imp-card">
+        <h4>Economic Impact</h4>
+        <ul>
+          <li>600 student entrepreneurs trained &amp; incubated</li>
+          <li>10 investment-ready enterprises formally launched</li>
+          <li>200+ direct &amp; indirect jobs created within 12 months</li>
+          <li>40+ businesses formally registered with CAC</li>
+          <li>Enterprise capital &amp; training scholarships disbursed</li>
+          <li>Direct pipeline to BOI and DFI financing instruments</li>
+        </ul>
+      </div>
+      <div class="imp-card">
+        <h4>Social Impact</h4>
+        <ul>
+          <li>Full alignment with UN SDGs 4, 8, 9, 10 &amp; 17</li>
+          <li>Youth leadership and character development</li>
+          <li>Monthly UN SDG workshops for top participants</li>
+          <li>Secondary school outreach by SYDP graduates</li>
+          <li>Team-based inclusive participation model</li>
+          <li>Financial literacy for underserved university youth</li>
+        </ul>
+      </div>
+      <div class="imp-card">
+        <h4>Systemic Impact</h4>
+        <ul>
+          <li>Replicable university enterprise model at continental scale</li>
+          <li>University–industry–investment ecosystem created</li>
+          <li>BOI and DFI-compliant enterprise pipeline</li>
+          <li>Data-driven M&amp;E framework for development partners</li>
+          <li>Pan-African expansion: 5+ universities by 2030</li>
+          <li>Quarterly &amp; annual ESG-aligned reporting to partners</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section style="background:var(--bg)">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Pan-African Expansion</span>
+      <h2>From UNILAG to the Continent</h2>
+      <p>SYDP is architected from Cohort 1 for continental scale. Partners who invest at the UNILAG stage gain preferred partner status across all future cohorts.</p>
+    </div>
+    <div class="roadmap reveal">
+      <div class="road-card">
+        <span class="r-tag" style="background:var(--green)">Phase 1 · Pilot</span>
+        <h4>Nigeria — UNILAG, Lagos</h4>
+        <span class="r-year">2026–2027</span>
+        <p>600 student entrepreneurs. Cohort 1, proof-of-concept and impact documentation.</p>
+      </div>
+      <div class="road-card">
+        <span class="r-tag" style="background:var(--navy)">Phase 2 · National</span>
+        <h4>Nigeria — UI, ABU Zaria</h4>
+        <span class="r-year">2027–2028</span>
+        <p>1,200 additional participants. Standardised curriculum. National partnership model.</p>
+      </div>
+      <div class="road-card">
+        <span class="r-tag" style="background:#0891b2">Phase 3 · Regional</span>
+        <h4>West Africa — Ghana, Senegal, Côte d'Ivoire</h4>
+        <span class="r-year">2028–2029</span>
+        <p>1,800 additional participants. Regional investment matchmaking.</p>
+      </div>
+      <div class="road-card">
+        <span class="r-tag" style="background:#7c3aed">Phase 4 · Continental</span>
+        <h4>East &amp; Southern Africa</h4>
+        <span class="r-year">2029–2030</span>
+        <p>2,400 participants. Pan-African SYDP Alumni Network. Continental Demo Day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPONSORSHIP -->
+<section id="sponsor" style="background:#fff">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Partnership &amp; Sponsorship</span>
+      <h2>Invest in Africa's Next<br>Generation of Enterprise Leaders</h2>
+      <p>Four partnership tiers aligned to different levels of investment commitment. All partners receive co-branding, formal recognition, and structured impact reporting.</p>
+    </div>
+    <div class="tier-grid reveal">
+      <div class="tier-card featured">
+        <div class="t-ribbon">★ Founding</div>
+        <div class="t-tier" style="color:var(--gold)">Tier 1 — Platinum</div>
+        <h3>Founding Partner</h3>
+        <div class="t-price">₦210,000,000<small>DFIs · Govt-Linked Banks · Multilaterals</small></div>
+        <ul>
+          <li>Named Lead Founding Partner on all SYDP materials</li>
+          <li>Full co-branding across all events &amp; media</li>
+          <li>BOI &amp; DFI investment readiness pipeline access</li>
+          <li>Preferred status — all future SYDP cohorts</li>
+          <li>First right of refusal on Pan-African expansion</li>
+          <li>Speaking slot at External Pitch Day &amp; Demo Day</li>
+          <li>Bespoke quarterly ESG-aligned impact reports</li>
+        </ul>
+        <a href="#apply" class="btn btn-dark btn-block" onclick="openPartnerModal()">Discuss Partnership</a>
+      </div>
+      <div class="tier-card">
+        <div class="t-tier" style="color:var(--green)">Tier 2 — Gold</div>
+        <h3>Strategic Partner</h3>
+        <div class="t-price">₦35,100,000<small>Corporate Banks · CSR Depts · SME Institutions</small></div>
+        <ul>
+          <li>Named Strategic Partner on all materials</li>
+          <li>Co-branding at all Pitch Days &amp; Demo Day</li>
+          <li>Enterprise prizes for top 10 teams in your brand</li>
+          <li>CAC registration for 40 teams as your CSR</li>
+          <li>Quarterly progress reports with CSR metrics</li>
+          <li>Guest access to all pitch events &amp; networking</li>
+          <li>Training scholarships funded under partner brand</li>
+        </ul>
+        <a href="#apply" class="btn btn-dark btn-block" onclick="openPartnerModal()">Discuss Partnership</a>
+      </div>
+      <div class="tier-card">
+        <div class="t-tier" style="color:#1d4ed8">Tier 3 — Silver</div>
+        <h3>Programme Partner</h3>
+        <div class="t-price">₦10,000,000<small>Mid-Tier Corporates · Foundations · Dev. Agencies</small></div>
+        <ul>
+          <li>Named Programme Partner on materials &amp; signage</li>
+          <li>Co-branding at External Pitch Day &amp; Demo Day</li>
+          <li>Recognised as funding participant development</li>
+          <li>Named in Annual Impact Report</li>
+          <li>Guest attendance at External Pitch Day</li>
+          <li>Certificate of Recognition from AMC</li>
+          <li>Digital &amp; social media feature</li>
+        </ul>
+        <a href="#apply" class="btn btn-dark btn-block" onclick="openPartnerModal()">Discuss Partnership</a>
+      </div>
+      <div class="tier-card">
+        <div class="t-tier" style="color:#92400e">Tier 4 — Bronze</div>
+        <h3>Supporting Partner</h3>
+        <div class="t-price">₦2,500,000<small>Individuals · SMEs · Small Foundations · In-Kind</small></div>
+        <ul>
+          <li>Named Supporting Partner on documentation</li>
+          <li>Recognised as funding training materials</li>
+          <li>Named in Annual Impact Report</li>
+          <li>Certificate of Recognition from AMC</li>
+          <li>Digital &amp; social media feature</li>
+          <li>In-kind contributions accepted</li>
+          <li>Personalised acknowledgement from AMC leadership</li>
+        </ul>
+        <a href="#apply" class="btn btn-dark btn-block" onclick="openPartnerModal()">Discuss Partnership</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLY / CTA -->
+<section id="apply" style="background:var(--bg)">
+  <div class="container">
+    <div class="cta-band reveal">
+      <div>
+        <span class="eyebrow" style="background:rgba(255,255,255,.1);color:var(--gold-light)">Cohort 1 Open Now</span>
+        <h2>Ready to Transform Your Future?</h2>
+        <p>SYDP UNILAG Cohort 1 opens Thursday, 2 July 2026. Participation is free — by nomination and selection. Submit your interest and we will connect you with your Department representative.</p>
+        <div class="cta-actions">
+          <a href="mailto:auxiliummaxcompany@gmail.com" class="btn btn-primary">Email AMC Directly</a>
+          <a href="tel:+2347083791851" class="btn btn-ghost">+234 708 379 1851</a>
+        </div>
+      </div>
+      <div class="cta-form">
+        <h4>Express Interest</h4>
+        <p class="sub">Tell us how you'd like to be involved.</p>
+        <input type="text" placeholder="Full Name" id="f-name"/>
+        <input type="email" placeholder="Email Address" id="f-email"/>
+        <input type="tel" placeholder="Phone Number" id="f-phone"/>
+        <select id="f-role">
+          <option value="">I am interested as a...</option>
+          <option>Prospective Student Participant</option>
+          <option>Prospective Sponsor / Partner</option>
+          <option>Faculty / Departmental Contact</option>
+          <option>Media / Press</option>
+          <option>General Enquiry</option>
+        </select>
+        <button class="btn btn-primary btn-block" onclick="submitInterest(event)" style="margin-top:4px">Submit Interest &rarr;</button>
+        <p class="f-note">We respond within 48 hours · No commitment required</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="background:#fff">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Get In Touch</span>
+      <h2>Contact the SYDP Team</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="c-block reveal">
+        <h4>Auxilium Max Company Limited (AMC)</h4>
+        <p class="sub">Pan-African Business Venture Studio · RC1908390 · Lead Implementor — Programme Design, Curriculum, Governance &amp; Administration.</p>
+        <div class="c-item">
+          <div class="c-ico">✉</div>
+          <div><h4>Email</h4><p><a href="mailto:auxiliummaxcompany@gmail.com">auxiliummaxcompany@gmail.com</a></p></div>
+        </div>
+        <div class="c-item">
+          <div class="c-ico">📞</div>
+          <div><h4>Phone</h4><p><a href="tel:+2347083791851">+234 708 379 1851</a></p></div>
+        </div>
+        <div class="c-item">
+          <div class="c-ico">📍</div>
+          <div><h4>Pilot Venue</h4><p>Faculty of Law Inner Hall, University of Lagos<br>Akoka, Yaba, Lagos, Nigeria</p></div>
+        </div>
+        <div class="c-item">
+          <div class="c-ico">in</div>
+          <div><h4>LinkedIn</h4><p><a href="https://linkedin.com/company/auxiliummaxcompany" target="_blank" rel="noopener">linkedin.com/company/auxiliummaxcompany</a></p></div>
+        </div>
+        <div style="display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-top:20px">
+          <img src="assets/img/amc-ltd-logo.png" alt="AMC" style="height:38px"/>
+          <img src="assets/img/blackbelt-logo.png" alt="BlackBelt Global" style="height:38px"/>
+          <img src="assets/img/unilag-logo.png" alt="UNILAG" style="height:38px"/>
+        </div>
+      </div>
+      <div class="reveal">
+        <form class="cf" onsubmit="handleContact(event)">
+          <div class="row">
+            <input type="text" placeholder="First Name" required/>
+            <input type="text" placeholder="Last Name" required/>
+          </div>
+          <input type="email" placeholder="Email Address" required/>
+          <input type="tel" placeholder="Phone (optional)"/>
+          <select required>
+            <option value="">Enquiry Type</option>
+            <option>Student Application Enquiry</option>
+            <option>Sponsorship / Partnership</option>
+            <option>Media / Press</option>
+            <option>Faculty / Institutional</option>
+            <option>General Enquiry</option>
+          </select>
+          <textarea placeholder="Your message…" required></textarea>
+          <button type="submit" class="btn btn-primary btn-block">Send Message &rarr;</button>
+          <p class="cf-note">Your data is used only to respond to your enquiry. We do not share your information.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="fb">
+        <img src="assets/img/sydp-logo.png" alt="SYDP"/>
+        <p>Strategic Youth Development Programme — Transforming Innovative Talents into Strategic Skills, Sustainable Enterprises and Future Leaders.</p>
+        <div class="socials">
+          <a href="https://linkedin.com/company/auxiliummaxcompany" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Programme</h5>
+        <ul>
+          <li><a href="#about">About SYDP</a></li>
+          <li><a href="#pathways">Enterprise Pathways</a></li>
+          <li><a href="#programme">Programme Structure</a></li>
+          <li><a href="#curriculum">Curriculum</a></li>
+          <li><a href="#apply">Apply Now</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Partnership</h5>
+        <ul>
+          <li><a href="#sponsor">Sponsorship Tiers</a></li>
+          <li><a href="#partners">Our Partners</a></li>
+          <li><a href="#contact">Contact AMC</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:auxiliummaxcompany@gmail.com">auxiliummaxcompany@gmail.com</a></li>
+          <li><a href="tel:+2347083791851">+234 708 379 1851</a></li>
+          <li><a>Faculty of Law, UNILAG, Lagos</a></li>
+          <li><a>Auxilium Max Company Ltd · RC1908390</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Auxilium Max Company Limited (AMC) &amp; BlackBelt Global Consulting Limited. All rights reserved.</span>
+      <span>Co-created by AMC &amp; BlackBelt Global Consulting Limited · UNILAG Maiden Edition</span>
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="partnerModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <h3>Discuss a Partnership</h3>
+    <p style="color:var(--muted);font-size:.88rem;margin-bottom:20px">Reach out to the AMC team to begin your partnership conversation.</p>
+    <div style="display:grid;gap:10px">
+      <a href="mailto:auxiliummaxcompany@gmail.com?subject=SYDP Partnership Enquiry" class="btn btn-primary">✉ Email auxiliummaxcompany@gmail.com</a>
+      <a href="tel:+2347083791851" class="btn btn-dark">📞 Call +234 708 379 1851</a>
+    </div>
+    <div style="margin-top:18px;border-top:1px solid var(--line);padding-top:16px;font-size:.83rem;color:var(--muted)">
+      <strong style="color:var(--ink)">5-Step Process:</strong>
+      <ol style="margin-top:8px;padding-left:18px;display:grid;gap:6px">
+        <li>Contact AMC to express interest &amp; indicate preferred tier</li>
+        <li>AMC schedules a briefing covering benefits &amp; M&amp;E framework</li>
+        <li>Partnership MOU drafted &amp; executed</li>
+        <li>Brand integration across all SYDP materials &amp; events</li>
+        <li>Ongoing engagement &amp; impact reporting throughout programme</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<button class="to-top" id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
