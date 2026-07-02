@@ -1,7 +1,7 @@
 // ===== Countdown =====
 (function(){
-  // 2 July 2026 14:00 WAT = UTC+1 → 13:00 UTC
-  const target = new Date('2026-07-02T13:00:00Z');
+  // 3 July 2026 15:00 WAT = UTC+1 → 14:00 UTC
+  const target = new Date('2026-07-03T14:00:00Z');
   const days  = document.getElementById('cd-days');
   const hours = document.getElementById('cd-hours');
   const mins  = document.getElementById('cd-mins');
