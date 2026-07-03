@@ -106,7 +106,7 @@ nav.menu a:hover{color:#fff;background:rgba(255,255,255,.1)}
 .cd-num{font-family:var(--font);font-size:clamp(2.8rem,6vw,4.2rem);font-weight:800;color:#fff;line-height:1;letter-spacing:-.02em}
 .cd-lbl{font-size:.65rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-top:5px}
 .cd-sep{font-family:var(--font);font-size:clamp(2rem,4vw,3rem);font-weight:800;color:var(--gold);margin-bottom:18px;opacity:.7}
-.cd-sub{font-size:.82rem;color:rgba(255,255,255,.45);letter-spacing:.04em}
+.cd-sub{font-size:.98rem;color:rgba(255,255,255,.65);letter-spacing:.05em;font-weight:500;margin-top:6px}
 @media(max-width:480px){.cd-unit{min-width:64px}.cd-sep{font-size:1.8rem}}
 
 /* ── LOGO WALL ── */
