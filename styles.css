@@ -512,3 +512,281 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.65);padding:70px 0 0}
   .value-chain{gap:4px}
   .vc-step{font-size:.68rem;padding:5px 9px}
 }
+
+/* =============================================
+   v4 — Ecosystem / TEND / Journey / Sub-pages
+   ============================================= */
+
+/* Solid header for inner pages (no hero behind) */
+header.solid{background:rgba(255,255,255,.97);backdrop-filter:blur(14px);box-shadow:0 2px 20px rgba(11,31,77,.1)}
+header.solid nav.menu a{color:var(--navy)}
+header.solid nav.menu a:hover{color:var(--gold);background:var(--gold-dim)}
+header.solid .burger{color:var(--navy)}
+
+/* Sub-page banner */
+.subpage-hero{background:linear-gradient(135deg,var(--navy-deep),var(--navy-mid) 70%,#1a3a7c);color:#fff;padding:150px 0 70px;position:relative;overflow:hidden}
+.subpage-hero::before{content:'';position:absolute;width:520px;height:520px;border-radius:50%;border:1px solid rgba(201,162,39,.14);top:-140px;right:-120px;pointer-events:none}
+.subpage-hero .eyebrow{background:rgba(201,162,39,.18);color:var(--gold-light)}
+.subpage-hero h1{font-size:clamp(2rem,4vw,3rem);color:#fff;margin:6px 0 14px;letter-spacing:-.03em}
+.subpage-hero p{color:rgba(255,255,255,.72);max-width:640px;font-size:1.02rem;line-height:1.7}
+.crumb{font-size:.8rem;color:rgba(255,255,255,.5);margin-bottom:16px}
+.crumb a{color:var(--gold-light)}
+
+/* TEND framework */
+.tend-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.tend-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;box-shadow:var(--shadow);transition:.22s}
+.tend-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:var(--gold)}
+.tend-letter{display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:14px;background:var(--navy);color:var(--gold-light);font-family:var(--font);font-weight:800;font-size:1.5rem;margin-bottom:16px}
+.tend-card h4{font-size:1.15rem;margin-bottom:8px;color:var(--navy)}
+.tend-card p{font-size:.9rem;color:var(--muted);line-height:1.65}
+
+/* 12-month journey flow */
+.journey-flow{max-width:720px;margin:0 auto;display:flex;flex-direction:column;align-items:stretch;gap:8px}
+.journey-step{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:var(--radius);padding:20px 26px;box-shadow:var(--shadow);display:flex;align-items:center;gap:18px}
+.journey-step .js-ico{font-size:1.7rem;flex-shrink:0}
+.journey-step h4{color:var(--navy);font-size:1.05rem;margin-bottom:2px}
+.journey-step p{font-size:.86rem;color:var(--muted);margin:0}
+.journey-arrow{text-align:center;color:var(--gold);font-size:1.3rem;font-weight:800;line-height:1}
+
+/* Incubation tracks */
+.track-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.track-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px;box-shadow:var(--shadow);transition:.2s}
+.track-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--gold)}
+.track-card .tk-ico{font-size:1.9rem;display:block;margin-bottom:12px}
+.track-card h4{color:var(--navy);font-size:1rem;margin-bottom:6px;line-height:1.2}
+.track-card p{font-size:.83rem;color:var(--muted);line-height:1.6}
+
+/* Talent to Asset */
+.tta-section{background:linear-gradient(135deg,var(--navy-deep),var(--navy-mid));padding:90px 0}
+.tta-flow{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:12px}
+.tta-step{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:14px 26px;color:#fff;font-weight:700;font-family:var(--font);font-size:.95rem;backdrop-filter:blur(6px)}
+.tta-step.tta-last{background:var(--gold);color:var(--navy-deep);border-color:var(--gold)}
+.tta-arr{color:var(--gold-light);font-size:1.3rem;font-weight:800}
+
+/* Coming soon roadmap */
+.soon-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.soon-card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;box-shadow:var(--shadow);opacity:.96}
+.soon-card .soon-tag{position:absolute;top:14px;right:14px;font-size:.6rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);background:var(--gold-dim);padding:4px 9px;border-radius:999px}
+.soon-card .soon-ico{font-size:1.8rem;display:block;margin-bottom:12px}
+.soon-card h4{color:var(--navy);font-size:1rem;margin-bottom:6px}
+.soon-card p{font-size:.83rem;color:var(--muted);line-height:1.6}
+
+/* Ecosystem leads */
+.eco-lead{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:26px}
+.eco-lead-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
+.eco-lead-card.lead-primary{border-top:4px solid var(--gold)}
+.eco-lead-card .eco-role{font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.eco-lead-card h3{color:var(--navy);margin-bottom:10px}
+.eco-lead-card p{font-size:.9rem;color:var(--muted);line-height:1.7}
+.eco-strategic{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:10px}
+.eco-strategic .eco-s-card{background:var(--navy);color:#fff;border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.eco-strategic .eco-s-card h4{color:#fff;font-size:1.05rem;margin-bottom:4px}
+.eco-strategic .eco-s-card span{font-size:.82rem;color:rgba(255,255,255,.65)}
+
+/* Ecosystem partner cards */
+.eco-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.eco-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:12px;transition:.2s}
+.eco-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--gold)}
+.eco-card .eco-logo{height:70px;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--line);padding-bottom:12px}
+.eco-card .eco-logo img{max-height:64px;width:auto;object-fit:contain}
+.logo-slot{height:60px;width:100%;border:1.5px dashed var(--line);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#94a3b8;background:repeating-linear-gradient(45deg,#f8fafc,#f8fafc 8px,#f1f5f9 8px,#f1f5f9 16px)}
+.eco-card h4{color:var(--navy);font-size:1rem;line-height:1.2}
+.eco-card .eco-exp{font-size:.85rem;color:var(--muted);line-height:1.6}
+
+/* Governance */
+.gov-flow{max-width:440px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+.gov-node{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 22px;text-align:center;font-weight:700;font-family:var(--font);color:var(--navy);box-shadow:var(--shadow)}
+.gov-node.top{background:var(--navy);color:#fff}
+.gov-arrow{text-align:center;color:var(--gold);font-size:1.2rem;font-weight:800}
+.ws-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.ws-card{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--navy);border-radius:var(--radius-sm);padding:16px 20px;box-shadow:var(--shadow);display:flex;align-items:center;gap:14px}
+.ws-card .ws-n{font-family:var(--font);font-weight:800;color:var(--gold);font-size:1.1rem;flex-shrink:0}
+.ws-card h4{color:var(--navy);font-size:.95rem;margin:0}
+
+/* Volunteer portal */
+.vol-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.vol-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;box-shadow:var(--shadow);transition:.2s;display:flex;flex-direction:column;gap:10px}
+.vol-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--gold)}
+.vol-card .vol-ico{font-size:1.9rem}
+.vol-card h4{color:var(--navy);font-size:1.05rem}
+.vol-card p{font-size:.86rem;color:var(--muted);line-height:1.6;flex:1}
+.vol-card .btn{margin-top:6px}
+.ben-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.ben-card{background:var(--navy);color:#fff;border-radius:var(--radius);padding:28px 24px;box-shadow:var(--shadow);text-align:center}
+.ben-card .ben-ico{font-size:2rem;display:block;margin-bottom:12px}
+.ben-card h4{color:var(--gold-light);font-size:1.1rem;margin-bottom:6px}
+.ben-card p{font-size:.86rem;color:rgba(255,255,255,.7);line-height:1.6}
+
+/* Responsive — v4 */
+@media(max-width:960px){
+  .tend-grid,.track-grid,.soon-grid{grid-template-columns:repeat(2,1fr)}
+  .eco-grid,.vol-grid,.ben-grid,.eco-strategic{grid-template-columns:repeat(2,1fr)}
+  .eco-lead{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .tend-grid,.track-grid,.soon-grid,.eco-grid,.vol-grid,.ben-grid,.eco-strategic,.ws-grid{grid-template-columns:1fr}
+  .tta-flow{flex-direction:column}
+  .tta-arr{transform:rotate(90deg)}
+  .journey-step{padding:16px 18px;gap:12px}
+  .subpage-hero{padding:130px 0 54px}
+}
+
+/* =============================================
+   v5 — PREMIUM GRADE ELEVATION
+   Refined gradients · glass · glow · micro-interactions
+   ============================================= */
+:root{
+  --gold-grad:linear-gradient(120deg,#e8c14d 0%,#c9a227 45%,#f0c75e 100%);
+  --navy-grad:linear-gradient(135deg,#060f28 0%,#0b1f4d 48%,#16307a 100%);
+  --shadow-gold:0 10px 34px -8px rgba(201,162,39,.5);
+  --shadow-soft:0 2px 10px -2px rgba(11,31,77,.08),0 12px 34px -10px rgba(11,31,77,.14);
+  --shadow-float:0 6px 18px -4px rgba(11,31,77,.12),0 24px 60px -18px rgba(11,31,77,.26);
+  --ring-gold:0 0 0 1px rgba(201,162,39,.35);
+}
+
+/* Selection + scrollbar polish */
+::selection{background:var(--gold);color:var(--navy-deep)}
+::-webkit-scrollbar{width:11px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:linear-gradient(var(--navy),var(--navy-mid));border-radius:8px;border:2px solid var(--bg)}
+::-webkit-scrollbar-thumb:hover{background:var(--gold)}
+
+/* ── Typography elevation ── */
+h2{letter-spacing:-.028em}
+.section-head{position:relative}
+.section-head h2{position:relative;padding-bottom:14px}
+.section-head h2::after{content:'';position:absolute;left:0;bottom:0;width:56px;height:3px;border-radius:3px;background:var(--gold-grad)}
+.section-head.center h2::after{left:50%;transform:translateX(-50%)}
+.eyebrow{backdrop-filter:blur(4px);box-shadow:inset 0 0 0 1px rgba(201,162,39,.22)}
+
+/* ── Buttons: gradient + shine sweep ── */
+.btn{position:relative;overflow:hidden;letter-spacing:.01em}
+.btn-primary{background:var(--gold-grad);background-size:150% auto;box-shadow:var(--shadow-gold)}
+.btn-primary:hover{background-position:right center;transform:translateY(-2px) scale(1.015);box-shadow:0 14px 38px -8px rgba(201,162,39,.65)}
+.btn::after{content:'';position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-22deg);transition:none;opacity:0}
+.btn:hover::after{animation:btnShine .8s ease forwards}
+@keyframes btnShine{0%{left:-80%;opacity:1}100%{left:130%;opacity:0}}
+.btn-dark{background:var(--navy-grad)}
+
+/* ── Header: glass nav + underline hover ── */
+header.scrolled,header.solid{background:rgba(255,255,255,.82);backdrop-filter:blur(20px) saturate(1.6)}
+nav.menu a{position:relative}
+nav.menu a::after{content:'';position:absolute;left:13px;right:13px;bottom:4px;height:2px;border-radius:2px;background:var(--gold-grad);transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+nav.menu a:hover::after{transform:scaleX(1)}
+
+/* ── HERO: aurora mesh + gradient headline + glass stats ── */
+.hero{background:var(--navy-grad)}
+.hero::before{border:none;background:radial-gradient(circle,rgba(201,162,39,.16),transparent 65%);filter:blur(10px);animation:auroraA 14s ease-in-out infinite alternate}
+.hero::after{border:none;background:radial-gradient(circle,rgba(38,99,235,.22),transparent 62%);filter:blur(14px);animation:auroraB 18s ease-in-out infinite alternate}
+@keyframes auroraA{0%{transform:translate(0,0) scale(1)}100%{transform:translate(-70px,50px) scale(1.18)}}
+@keyframes auroraB{0%{transform:translate(0,0) scale(1)}100%{transform:translate(60px,-40px) scale(1.14)}}
+.hero-content h1 em{background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-content .eyebrow{box-shadow:inset 0 0 0 1px rgba(201,162,39,.4)}
+.hero-stats{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(14px);box-shadow:0 18px 50px -18px rgba(0,0,0,.5)}
+.h-stat{transition:background .25s}
+.h-stat:hover{background:rgba(201,162,39,.13)}
+.h-stat .num{background:linear-gradient(180deg,#fff 30%,#e8cf8f);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-logo-ring{box-shadow:0 8px 48px rgba(0,0,0,.35),0 0 90px -18px rgba(201,162,39,.45)}
+
+/* ── Countdown: glass digits + glow ── */
+.countdown-band{background:radial-gradient(ellipse 80% 120% at 50% -20%,#16307a 0%,var(--navy-deep) 60%);border-bottom:none;position:relative}
+.countdown-band::after{content:'';position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--gold-grad)}
+.cd-unit{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:14px 10px 10px;backdrop-filter:blur(8px)}
+.cd-num{text-shadow:0 0 34px rgba(201,162,39,.35)}
+
+/* ── Logo wall refinement ── */
+.logo-wall{border-bottom:none;box-shadow:inset 0 -1px 0 var(--line)}
+.lw-lead-card{position:relative}
+.lw-lead-card::after{content:'';position:absolute;left:20%;right:20%;bottom:0;height:2px;background:var(--gold-grad);opacity:0;transition:.3s}
+.lw-lead-card:hover::after{opacity:1}
+
+/* ── Universal premium card treatment ── */
+.tend-card,.track-card,.soon-card,.eco-card,.vol-card,.sector-card,.tier-card,.p-card,.spk-card,.road-card,.eco-lead-card,.journey-step,.ws-card,.assess-card,.prog-table{box-shadow:var(--shadow-soft)}
+.tend-card,.track-card,.soon-card,.eco-card,.vol-card{position:relative;border-radius:18px}
+.tend-card::before,.track-card::before,.soon-card::before,.eco-card::before,.vol-card::before{content:'';position:absolute;inset:0;border-radius:inherit;padding:1.5px;background:linear-gradient(140deg,rgba(201,162,39,.55),transparent 38%,transparent 65%,rgba(11,31,77,.25));-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .3s;pointer-events:none}
+.tend-card:hover::before,.track-card:hover::before,.soon-card:hover::before,.eco-card:hover::before,.vol-card:hover::before{opacity:1}
+.tend-card:hover,.track-card:hover,.eco-card:hover,.vol-card:hover{transform:translateY(-7px);box-shadow:var(--shadow-float)}
+
+/* TEND letters — gradient chip + tilt */
+.tend-letter{background:var(--navy-grad);box-shadow:0 8px 22px -6px rgba(11,31,77,.45),var(--ring-gold);transition:.3s}
+.tend-card:hover .tend-letter{transform:rotate(-6deg) scale(1.08);box-shadow:0 12px 28px -6px rgba(201,162,39,.5)}
+
+/* Track icons — soft chip backdrop */
+.track-card .tk-ico,.soon-card .soon-ico,.vol-card .vol-ico{width:54px;height:54px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--gold-dim),rgba(11,31,77,.06));border-radius:14px;font-size:1.6rem;margin-bottom:14px;box-shadow:inset 0 0 0 1px rgba(201,162,39,.18);transition:.3s}
+.track-card:hover .tk-ico,.vol-card:hover .vol-ico{transform:scale(1.12) rotate(4deg);background:var(--gold-grad);box-shadow:var(--shadow-gold)}
+
+/* Journey — numbered rail */
+.journey-flow{position:relative;counter-reset:jstep}
+.journey-step{counter-increment:jstep;border-left:none;padding-left:70px;position:relative;border-radius:16px;transition:.28s}
+.journey-step::before{content:counter(jstep,decimal-leading-zero);position:absolute;left:20px;top:50%;transform:translateY(-50%);font-family:var(--font);font-weight:800;font-size:.85rem;color:var(--navy);background:var(--gold-grad);width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-gold)}
+.journey-step:hover{transform:translateX(8px);box-shadow:var(--shadow-float);border-color:var(--gold)}
+.journey-arrow{background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* Talent→Asset: gradient orbs */
+.tta-section{background:radial-gradient(ellipse 90% 130% at 15% -30%,#16307a 0%,var(--navy-deep) 55%),var(--navy-deep);position:relative;overflow:hidden}
+.tta-section::before{content:'';position:absolute;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(201,162,39,.14),transparent 65%);bottom:-200px;right:-120px;filter:blur(8px)}
+.tta-step{transition:.3s}
+.tta-step:hover{background:rgba(255,255,255,.14);transform:translateY(-3px)}
+.tta-step.tta-last{background:var(--gold-grad);box-shadow:var(--shadow-gold);animation:ttaPulse 2.6s ease-in-out infinite}
+@keyframes ttaPulse{0%,100%{box-shadow:0 10px 34px -8px rgba(201,162,39,.5)}50%{box-shadow:0 10px 48px -4px rgba(201,162,39,.85)}}
+
+/* Impact / dark sections — richer canvas */
+.impact-section{background:radial-gradient(ellipse 100% 140% at 85% -30%,#16307a 0%,var(--navy-deep) 58%)}
+.imp-card{backdrop-filter:blur(10px);border-radius:18px;transition:.28s}
+.imp-card:hover{transform:translateY(-6px);border-color:rgba(201,162,39,.5)}
+
+/* Tier cards — featured glow */
+.tier-card{border-radius:18px;transition:.28s}
+.tier-card:hover{transform:translateY(-7px);box-shadow:var(--shadow-float)}
+.tier-card.featured{box-shadow:0 0 0 2px var(--gold),0 24px 60px -16px rgba(201,162,39,.4);position:relative}
+.tier-card.featured::after{content:'';position:absolute;inset:-2px;border-radius:inherit;background:var(--gold-grad);opacity:.08;pointer-events:none}
+
+/* Sub-page hero — aurora */
+.subpage-hero{background:var(--navy-grad)}
+.subpage-hero::before{border:none;background:radial-gradient(circle,rgba(201,162,39,.18),transparent 62%);filter:blur(12px);animation:auroraA 16s ease-in-out infinite alternate}
+.subpage-hero h1{text-shadow:0 4px 40px rgba(0,0,0,.3)}
+
+/* Governance flow — connected premium nodes */
+.gov-node{border-radius:14px;transition:.25s;position:relative}
+.gov-node:hover{transform:scale(1.035);border-color:var(--gold);box-shadow:var(--shadow-float)}
+.gov-node.top{background:var(--navy-grad);box-shadow:0 14px 36px -10px rgba(11,31,77,.55),var(--ring-gold)}
+.gov-arrow{background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.ws-card{transition:.25s;border-radius:12px}
+.ws-card:hover{transform:translateX(6px);border-left-color:var(--gold);box-shadow:var(--shadow-float)}
+.ws-card .ws-n{background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* Benefits — gradient navy + gold ring */
+.ben-card{background:var(--navy-grad);border-radius:18px;position:relative;overflow:hidden;transition:.28s}
+.ben-card::before{content:'';position:absolute;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(201,162,39,.22),transparent 70%);top:-70px;right:-60px}
+.ben-card:hover{transform:translateY(-7px);box-shadow:0 24px 60px -14px rgba(11,31,77,.55),var(--ring-gold)}
+.ben-card .ben-ico{filter:drop-shadow(0 6px 16px rgba(201,162,39,.45))}
+
+/* Ecosystem lead + strategic cards */
+.eco-lead-card{border-radius:18px;transition:.25s}
+.eco-lead-card:hover{box-shadow:var(--shadow-float)}
+.eco-lead-card.lead-primary{border-top:none;position:relative;overflow:hidden}
+.eco-lead-card.lead-primary::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--gold-grad)}
+.eco-s-card{transition:.25s;position:relative;overflow:hidden}
+.eco-strategic .eco-s-card{background:var(--navy-grad);border-radius:14px}
+.eco-strategic .eco-s-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px -10px rgba(11,31,77,.5),var(--ring-gold)}
+
+/* Coming soon — shimmer tag */
+.soon-card .soon-tag{background:var(--gold-grad);color:var(--navy-deep);background-size:180% auto;animation:tagShimmer 3s linear infinite}
+@keyframes tagShimmer{0%{background-position:0% center}100%{background-position:180% center}}
+
+/* Footer — gradient + gold hairline */
+footer{position:relative}
+footer::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--gold-grad)}
+
+/* Reveal — slightly springier */
+.reveal{transform:translateY(30px) scale(.985);transition:opacity .65s cubic-bezier(.22,.9,.3,1),transform .65s cubic-bezier(.22,.9,.3,1)}
+.reveal.in{transform:none}
+
+/* Back-to-top — gold gradient */
+.to-top{background:var(--gold-grad);box-shadow:var(--shadow-gold)}
+
+/* Reduced motion respect */
+@media(prefers-reduced-motion:reduce){
+  .hero::before,.hero::after,.subpage-hero::before,.tta-step.tta-last,.soon-card .soon-tag{animation:none}
+  .reveal{transition-duration:.01s}
+}
