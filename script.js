@@ -1,7 +1,7 @@
 // ===== Countdown =====
 (function(){
-  // 3 July 2026 15:00 WAT = UTC+1 → 14:00 UTC
-  const target = new Date('2026-07-03T14:00:00Z');
+  // Global Investor Pitch Session — 30 July 2026 17:00 WAT = UTC+1 → 16:00 UTC
+  const target = new Date('2026-07-30T16:00:00Z');
   const days  = document.getElementById('cd-days');
   const hours = document.getElementById('cd-hours');
   const mins  = document.getElementById('cd-mins');

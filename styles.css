@@ -221,6 +221,7 @@ nav.menu a:hover{color:#fff;background:rgba(255,255,255,.1)}
 .mc-card{background:var(--navy);border-radius:var(--radius);padding:24px;text-align:center}
 .mc-card .mc-label{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-light);margin-bottom:8px}
 .mc-card h4{color:#fff;font-size:1.05rem}
+.mc-sub{font-size:.78rem;color:rgba(255,255,255,.7);line-height:1.55;margin-top:7px}
 .assess-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
 .assess-card h4{color:var(--navy);margin-bottom:14px;font-size:.95rem}
 .a-item{background:var(--bg);border-radius:10px;padding:13px 15px;margin-bottom:9px}
@@ -856,6 +857,15 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;back
 .jury-tags{display:flex;flex-wrap:wrap;gap:6px}
 .jury-tags span{font-size:.68rem;font-weight:600;color:var(--navy);background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:3px 10px}
 .jury-body blockquote{margin-top:auto;padding:12px 16px;background:linear-gradient(135deg,var(--gold-dim),transparent);border-left:3px solid var(--gold);border-radius:0 10px 10px 0;font-size:.83rem;font-style:italic;color:var(--navy);line-height:1.55}
+
+/* Event host card */
+.host-card{display:flex;align-items:center;gap:24px;background:var(--navy-grad);border-radius:18px;padding:28px 32px;margin-bottom:26px;box-shadow:var(--shadow-float);position:relative;overflow:hidden}
+.host-card::before{content:'';position:absolute;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(201,162,39,.2),transparent 70%);top:-120px;right:-60px;pointer-events:none}
+.host-av{width:72px;height:72px;flex-shrink:0;border-radius:50%;background:var(--gold-grad);color:var(--navy-deep);font-family:var(--font);font-weight:800;font-size:1.3rem;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-gold)}
+.host-label{font-size:.66rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-light);margin-bottom:5px}
+.host-card h3{color:#fff;font-size:1.25rem;margin-bottom:5px}
+.host-card p{font-size:.87rem;color:rgba(255,255,255,.72);line-height:1.6}
+@media(max-width:640px){.host-card{flex-direction:column;text-align:center;padding:26px 22px}}
 
 /* Partners — lead cards */
 .lead-partners{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
