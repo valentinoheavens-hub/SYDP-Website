@@ -861,7 +861,13 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;back
 /* Event host card */
 .host-card{display:flex;align-items:center;gap:24px;background:var(--navy-grad);border-radius:18px;padding:28px 32px;margin-bottom:26px;box-shadow:var(--shadow-float);position:relative;overflow:hidden}
 .host-card::before{content:'';position:absolute;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(201,162,39,.2),transparent 70%);top:-120px;right:-60px;pointer-events:none}
-.host-av{width:72px;height:72px;flex-shrink:0;border-radius:50%;background:var(--gold-grad);color:var(--navy-deep);font-family:var(--font);font-weight:800;font-size:1.3rem;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-gold)}
+.host-av{position:relative;width:96px;height:96px;flex-shrink:0;border-radius:50%;background:var(--gold-grad);color:var(--navy-deep);font-family:var(--font);font-weight:800;font-size:1.5rem;display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 8px 26px -8px rgba(0,0,0,.5),0 0 0 2px rgba(201,162,39,.55)}
+.host-av img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%;z-index:1}
+.host-initials{position:relative;z-index:0}
+
+/* Event host avatar — ceremony aside card */
+.mc-av{position:relative;width:88px;height:88px;margin:0 auto 14px;border-radius:50%;background:var(--gold-grad);color:var(--navy-deep);font-family:var(--font);font-weight:800;font-size:1.35rem;display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 8px 24px -8px rgba(0,0,0,.45),0 0 0 2px rgba(201,162,39,.5)}
+.mc-av img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%;z-index:1}
 .host-label{font-size:.66rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-light);margin-bottom:5px}
 .host-card h3{color:#fff;font-size:1.25rem;margin-bottom:5px}
 .host-card p{font-size:.87rem;color:rgba(255,255,255,.72);line-height:1.6}
