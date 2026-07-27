@@ -6,6 +6,7 @@ const root = __dirname;
 const mime = {
   '.html':'text/html','.css':'text/css','.js':'application/javascript',
   '.png':'image/png','.jpg':'image/jpeg','.webp':'image/webp','.svg':'image/svg+xml',
+  '.xml':'application/xml','.txt':'text/plain','.ico':'image/x-icon','.json':'application/json',
 };
 http.createServer((req, res) => {
   let p = path.join(root, req.url === '/' ? 'index.html' : req.url);
