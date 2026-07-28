@@ -297,6 +297,7 @@ nav.menu a:hover{color:#fff;background:rgba(255,255,255,.1)}
 .p-av{width:56px;height:56px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-family:var(--font);font-weight:800;font-size:.85rem;color:#fff;flex-shrink:0}
 .p-role{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:5px}
 .p-card h4{font-size:.97rem;color:var(--navy);margin-bottom:5px}
+.p-card h4 a:hover{color:var(--gold);text-decoration:underline}
 .p-person{font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:6px}
 .p-person span{font-weight:400;color:var(--muted)}
 .p-card p{font-size:.83rem;color:var(--muted);line-height:1.6;margin-bottom:10px}
@@ -938,3 +939,14 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;back
   .jury-photo{height:280px}
   .jury-photo img{object-position:top center}
 }
+
+/* Inline entity links — inherit surrounding text, underline gold on hover */
+.eco-card h4 a,.eco-s-card h4 a,.lp-card h3 a,.pg-card h4 a,.fac-role a,
+.spk-card p a,.c-item h4 a,.mc-sub a,.eco-lead-card h3 a,.host-card p a{
+  text-decoration:none;transition:color .18s;
+}
+.eco-card h4 a:hover,.eco-s-card h4 a:hover,.lp-card h3 a:hover,.pg-card h4 a:hover,
+.fac-role a:hover,.spk-card p a:hover,.c-item h4 a:hover,.eco-lead-card h3 a:hover{
+  color:var(--gold);text-decoration:underline;
+}
+.mc-sub a:hover,.host-card p a:hover{color:var(--gold-light);text-decoration:underline}

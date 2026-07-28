@@ -87,14 +87,26 @@
       "address": { "@type": "PostalAddress", "addressLocality": "Lagos", "addressRegion": "Lagos", "addressCountry": "NG" },
       "subOrganization": [
         {
-          "@type": "Organization",
+          "@type": ["Organization", "ProfessionalService"],
           "@id": "https://sydp.vercel.app/#blackbelt",
           "name": "BlackBelt Global Consulting Limited",
           "alternateName": "BlackBelt Global Consulting",
           "description": "Strategic Implementing Partner — Investment Readiness and Investor Matchmaking.",
+          "url": "https://www.blackbeltglobal.co/",
           "logo": "https://sydp.vercel.app/assets/img/blackbelt-logo.png",
           "founder": { "@type": "Person", "@id": "https://sydp.vercel.app/#valentino", "name": "Dr. Valentino Heavens" },
-          "sameAs": ["https://www.youtube.com/@Blackbelt.Global"]
+          "sameAs": ["https://www.blackbeltglobal.co/", "https://www.linkedin.com/company/blackbeltglobalconsulting", "https://www.youtube.com/@Blackbelt.Global"]
+        },
+        {
+          "@type": ["Organization", "ProfessionalService"],
+          "@id": "https://sydp.vercel.app/#blackbeltceo",
+          "name": "BlackBeltCEO Venture Studio",
+          "alternateName": ["BlackBeltCEO", "BlackBeltCEO Business Clinic"],
+          "description": "Venture studio and business clinic building, advising and scaling founder-led enterprises. Lead. Build. Impact.",
+          "url": "https://www.blackbeltceo.org/",
+          "logo": "https://sydp.vercel.app/assets/img/bbceo-new-logo.png",
+          "founder": { "@type": "Person", "@id": "https://sydp.vercel.app/#valentino", "name": "Dr. Valentino Heavens" },
+          "sameAs": ["https://www.blackbeltceo.org/"]
         },
         { "@type": "Organization", "name": "PALMS Africa", "description": "Leadership Excellence, Project Management and Programme Delivery" },
         { "@type": "Organization", "name": "Gnovia Learning", "description": "AI and Learning Technology" }
@@ -118,12 +130,12 @@
     <nav class="menu" id="nav">
       <button class="menu-close-btn" onclick="toggleNav()">✕</button>
       <a href="index.html#about">About</a>
-      <a href="index.html#why">Why SYDP</a>
       <a href="index.html#journey">Programme</a>
+      <a href="pitch.html">Pitch Session</a>
+      <a href="partners.html">Partners</a>
       <a href="ecosystem.html">Ecosystem</a>
       <a href="governance.html">Governance</a>
       <a href="volunteer.html">Volunteer</a>
-      <a href="index.html#sponsor">Partner</a>
     </nav>
     <div class="nav-cta">
       <a href="https://forms.gle/u4UkEc2tQ8pf2D4n8" target="_blank" rel="noopener" class="btn btn-primary">Register</a>
@@ -160,7 +172,7 @@
         <div class="eco-role">Strategic Implementing Partners</div>
         <h3>Delivering the Programme Together</h3>
         <div class="eco-strategic" style="margin-top:16px">
-          <div class="eco-s-card"><h4>BlackBelt Global Consulting LTD</h4><span>Investment Readiness &amp; Investor Matchmaking</span></div>
+          <div class="eco-s-card"><h4><a href="https://www.blackbeltglobal.co/" target="_blank" rel="noopener">BlackBelt Global Consulting LTD</a></h4><span>Investment Readiness &amp; Investor Matchmaking</span></div>
           <div class="eco-s-card"><h4>Palms Africa</h4><span>Leadership, Project Management &amp; Delivery</span></div>
           <div class="eco-s-card"><h4>Gnovia Learning</h4><span>AI &amp; Learning Technology</span></div>
         </div>
@@ -179,7 +191,7 @@
     </div>
     <div class="eco-grid reveal">
       <div class="eco-card"><div class="eco-logo"><img src="assets/img/amc-ltd-logo.png" alt="Auxilium Max Company LTD"/></div><h4>Auxilium Max Company LTD</h4><div class="eco-exp">Business Venture Studio &amp; Technical Development Assistance</div></div>
-      <div class="eco-card"><div class="eco-logo"><img src="assets/img/blackbelt-logo.png" alt="BlackBelt Global Consulting LTD"/></div><h4>BlackBelt Global Consulting LTD</h4><div class="eco-exp">Investment Readiness &amp; Investor Matchmaking</div></div>
+      <div class="eco-card"><div class="eco-logo"><img src="assets/img/blackbelt-logo.png" alt="BlackBelt Global Consulting LTD"/></div><h4><a href="https://www.blackbeltglobal.co/" target="_blank" rel="noopener">BlackBelt Global Consulting LTD</a></h4><div class="eco-exp">Investment Readiness &amp; Investor Matchmaking</div></div>
       <div class="eco-card"><div class="eco-logo"><img src="assets/img/palms-africa-logo.png" alt="Palms Africa"/></div><h4>Palms Africa</h4><div class="eco-exp">Leadership Excellence, Project Management &amp; Programme Delivery</div></div>
       <div class="eco-card"><div class="eco-logo"><img src="assets/img/enhancing-hp-logo.png" alt="Enhancing Human Potential"/></div><h4>Enhancing Human Potential (EHP)</h4><div class="eco-exp">Human Capital Development</div></div>
       <div class="eco-card"><div class="eco-logo"><img src="assets/img/lcpa-logo.png" alt="LCPA Federation"/></div><h4>LCPA Federation</h4><div class="eco-exp">Social Impact Investment</div></div>
@@ -231,12 +243,14 @@
           <li><a href="index.html#about">About SYDP</a></li>
           <li><a href="index.html#why">Why SYDP — TEND</a></li>
           <li><a href="index.html#journey">12-Month Journey</a></li>
+          <li><a href="pitch.html">Pitch Session &amp; Jury</a></li>
           <li><a href="https://forms.gle/u4UkEc2tQ8pf2D4n8" target="_blank" rel="noopener">Register</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h5>Ecosystem</h5>
         <ul>
+          <li><a href="partners.html">Our Partners</a></li>
           <li><a href="ecosystem.html">SYDP Ecosystem</a></li>
           <li><a href="governance.html">Governance</a></li>
           <li><a href="volunteer.html">Volunteer Portal</a></li>
