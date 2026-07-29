@@ -958,8 +958,9 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;back
 .faci-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
 .faci-card{display:grid;grid-template-columns:150px 1fr;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow-soft);transition:.28s}
 .faci-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-float);border-color:var(--gold)}
-.faci-photo{position:relative;background:var(--navy-deep);overflow:hidden;min-height:190px}
+.faci-photo{position:relative;display:block;background:var(--navy-deep);overflow:hidden;min-height:190px}
 .faci-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 15%;transition:transform .4s}
+.faci-photo-zoom img{transform:scale(1.18)}
 .faci-card:hover .faci-photo img{transform:scale(1.06)}
 .faci-body{padding:22px 24px;display:flex;flex-direction:column;gap:8px;justify-content:center}
 .faci-body h4{color:var(--navy);font-size:1.02rem;line-height:1.25}
