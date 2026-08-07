@@ -81,10 +81,6 @@ nav.menu a:hover{color:#fff;background:rgba(255,255,255,.1)}
 .hero-content h1{font-size:clamp(2.2rem,4.2vw,3.6rem);color:#fff;letter-spacing:-.035em;line-height:1.08;margin-bottom:22px}
 .hero-content h1 em{color:var(--gold-light);font-style:normal}
 .hero-content p{font-size:clamp(.95rem,1.4vw,1.08rem);color:rgba(255,255,255,.7);max-width:520px;margin:0 0 36px;line-height:1.75}
-.hero-content p.hero-lead{margin-bottom:20px}
-.hero-pillars{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 20px;max-width:520px;margin:0 0 36px;padding:0}
-.hero-pillars li{display:flex;align-items:center;gap:11px;font-size:clamp(.9rem,1.3vw,1rem);color:rgba(255,255,255,.85);line-height:1.35;text-align:left}
-.hero-pillars li span{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:.76rem;font-weight:700;color:var(--gold-light);background:rgba(201,162,39,.18);box-shadow:inset 0 0 0 1px rgba(201,162,39,.4)}
 .hero-cta{display:flex;gap:14px;justify-content:flex-start;flex-wrap:wrap;margin-bottom:48px}
 .hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);overflow:hidden;max-width:100%}
 .h-stat{background:rgba(255,255,255,.06);padding:22px 16px;text-align:center;backdrop-filter:blur(6px)}
@@ -429,8 +425,6 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.65);padding:70px 0 0}
   .hero-layout .hero-cta{justify-content:center}
   .hero-layout .hero-stats{margin:0 auto}
   .hero-layout .hero-content p{margin:0 auto 36px}
-  .hero-layout .hero-content p.hero-lead{margin:0 auto 20px}
-  .hero-layout .hero-pillars{margin-left:auto;margin-right:auto;width:max-content;max-width:100%}
   .hero-logo-ring{width:200px;height:200px}
   .hero-logo-img{width:136px;height:136px}
 
@@ -467,7 +461,6 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.65);padding:70px 0 0}
   h2{font-size:1.65rem}
   .hero-content h1{font-size:2rem}
   .hero-inner{padding:120px 0 60px}
-  .hero-pillars{grid-template-columns:1fr;gap:11px}
 
   /* Nav — slide-in panel */
   nav.menu{position:fixed;top:0;right:-100%;width:82%;max-width:300px;height:100vh;background:#fff;flex-direction:column;align-items:flex-start;padding:24px 20px;gap:4px;transition:.32s ease;box-shadow:-8px 0 32px rgba(0,0,0,.18);z-index:1100}
