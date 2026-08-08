@@ -580,7 +580,7 @@ header.solid .burger{color:var(--navy)}
 .eco-lead-card .eco-role{font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
 .eco-lead-card h3{color:var(--navy);margin-bottom:10px}
 .eco-lead-card p{font-size:.9rem;color:var(--muted);line-height:1.7}
-.eco-strategic{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:10px}
+.eco-strategic{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-bottom:10px}
 .eco-strategic .eco-s-card{background:var(--navy);color:#fff;border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
 .eco-strategic .eco-s-card h4{color:#fff;font-size:1.05rem;margin-bottom:4px}
 .eco-strategic .eco-s-card span{font-size:.82rem;color:rgba(255,255,255,.65)}
